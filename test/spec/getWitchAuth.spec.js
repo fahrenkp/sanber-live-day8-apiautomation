@@ -1,3 +1,5 @@
+const { getUserPage } = require("./getUser.spec");
+
 const request = require("supertest")("https://reqres.in/api");
 const expect = require("chai").expect;
 
