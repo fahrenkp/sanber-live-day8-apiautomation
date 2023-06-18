@@ -1,0 +1,119 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-06-18T04:11:23.331Z",
+    "end": "2023-06-18T04:11:23.857Z",
+    "duration": 526,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "accb5a9c-aab5-4d3c-88b7-4070d29d44a3",
+      "title": "",
+      "fullFile": "C:\\Users\\denma\\Documents\\SANBER GIT\\sanber-live-day8-apiautomation\\test\\spec\\getUser.spec.js",
+      "file": "\\test\\spec\\getUser.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "a1e5b92e-91f5-4211-9805-6625444003bd",
+          "title": "GET data user dari web reqres",
+          "fullFile": "C:\\Users\\denma\\Documents\\SANBER GIT\\sanber-live-day8-apiautomation\\test\\spec\\getUser.spec.js",
+          "file": "\\test\\spec\\getUser.spec.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "return user page 1",
+              "fullTitle": "GET data user dari web reqres return user page 1",
+              "timedOut": false,
+              "duration": 453,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "// test case 1\n        const query1 = \"1\" //page ke-... yang dituju\n        const response = await getUserPage(query1)  //memanggil URL dari variabel getUserPage \n        //console.log(await response.body)\n        expect(await response.status).to.eql(200);  //pengecekan bahwa code yg muncul adalah 200 / berhasil\n        expect(await response.body.data.length).to.eql(6); // pengecekan bahwa ada 6 aray yang tampil di web",
+              "err": {},
+              "uuid": "0bcbf4b4-d41e-4a69-b3e9-70cfab426400",
+              "parentUUID": "a1e5b92e-91f5-4211-9805-6625444003bd",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "return user page 2",
+              "fullTitle": "GET data user dari web reqres return user page 2",
+              "timedOut": false,
+              "duration": 68,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "// test case 2\n        const query1 = \"2\" //page ke-... yang dituju\n        const response = await getUserPage(query1)  //memanggil URL dari variabel getUserPage \n        //console.log(await response.body)\n        expect(await response.status).to.eql(200);   //pengecekan bahwa code yg muncul adalah 200 / berhasil\n        expect(await response.body.data.length).to.eql(6); //pengecekan bahwa ada 6 aray yang tampil",
+              "err": {},
+              "uuid": "581c3d13-8e97-4276-9882-330cc6d6fbd9",
+              "parentUUID": "a1e5b92e-91f5-4211-9805-6625444003bd",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "0bcbf4b4-d41e-4a69-b3e9-70cfab426400",
+            "581c3d13-8e97-4276-9882-330cc6d6fbd9"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 521,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "10.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": null,
+      "version": "6.2.0"
+    }
+  }
+}
