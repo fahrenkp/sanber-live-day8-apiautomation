@@ -1,3 +1,4 @@
+//post user tapi ini dijadikan fungsi
 const request = require("supertest")("https://reqres.in/api");
 const expect = require("chai").expect;
 
